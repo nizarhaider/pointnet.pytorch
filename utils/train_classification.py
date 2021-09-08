@@ -68,13 +68,13 @@ dataloader = torch.utils.data.DataLoader(
     dataset,
     batch_size=opt.batchSize,
     shuffle=True,
-    num_workers=int(opt.workers))
+    num_workers=2)
 
 testdataloader = torch.utils.data.DataLoader(
         test_dataset,
         batch_size=opt.batchSize,
         shuffle=True,
-        num_workers=int(opt.workers))
+        num_workers=2)
 
 print(len(dataset), len(test_dataset))
 num_classes = len(dataset.classes)
