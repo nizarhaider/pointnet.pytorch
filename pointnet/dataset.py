@@ -162,7 +162,7 @@ class ModelNetDataset(data.Dataset):
                 self.cat[ls[0]] = int(ls[1])
 
         print(self.cat)
-        self.classes = list(self.cat.keys())
+        self.classes = list(self.fns)
 
     def __getitem__(self, index):
         fn = self.fns[index]
