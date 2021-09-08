@@ -151,7 +151,7 @@ class ModelNetDataset(data.Dataset):
         self.split = split
         self.data_augmentation = data_augmentation
         self.fns = []
-        with open('../input/rsna-miccai-brain-tumor-radiogenomic-classification/train_labels.csv', 'r') as f:
+        with open('../input/trainlabels/shit.txt', 'r') as f:
             for line in f:
                 self.fns.append(line.strip())
 
