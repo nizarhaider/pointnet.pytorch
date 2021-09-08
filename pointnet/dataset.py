@@ -151,7 +151,7 @@ class ModelNetDataset(data.Dataset):
         self.split = split
         self.data_augmentation = data_augmentation
         self.fns = []
-        with open(os.path.join(root, 'train_labels.csv'), 'r') as f:
+        with open(os.path('/kaggle/input/trainlabels/shit.txt'), 'r') as f:
             for line in f:
                 self.fns.append(line.strip())
 
